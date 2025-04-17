@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Your Name</title>
+  <style>
+    :root {
+      --primary: #f4e3b2;
+      --accent: #b8e4c4;
+      --text: #333;
+      --bg: #fff;
+    }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      padding: 2rem;
+      background: var(--primary);
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .grid-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .grid-gallery img, .slideshow img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .slideshow {
+      display: flex;
+      overflow-x: scroll;
+      gap: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+    .slideshow img {
+      scroll-snap-align: start;
+      flex: 0 0 90%;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--accent);
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Visual Artist & Illustrator</p>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <section id="gallery">
+    <h2>Gallery – Grid Style</h2>
+    <div class="grid-gallery">
+      <img src="https://via.placeholder.com/400x400?text=Artwork+1" alt="Artwork 1" />
+      <img src="https://via.placeholder.com/400x400?text=Artwork+2" alt="Artwork 2" />
+      <img src="https://via.placeholder.com/400x400?text=Artwork+3" alt="Artwork 3" />
+    </div><h2 style="margin-top: 3rem;">Gallery – Slideshow Style</h2>
+<div class="slideshow">
+  <img src="https://via.placeholder.com/800x600?text=Artwork+1" alt="Artwork 1" />
+  <img src="https://via.placeholder.com/800x600?text=Artwork+2" alt="Artwork 2" />
+  <img src="https://via.placeholder.com/800x600?text=Artwork+3" alt="Artwork 3" />
+</div>
+
+  </section>  <section id="about">
+    <h2>About Me</h2>
+    <p>This is a short bio about you. Talk about your background, art style, and what inspires you.</p>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <p>Reach out via email at <a href="mailto:you@example.com">you@example.com</a> or follow on social media.</p>
+  </section>  <footer>
+    <p>&copy; 2025 Your Name</p>
+  </footer>
+</body>
+</html>
